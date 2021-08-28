@@ -8,7 +8,7 @@
 </head>
 <body>
 
-	<h3>Spring Security Demo</h3>
+	<h3>Spring Security</h3>
 
 </body>
 </html>
