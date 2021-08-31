@@ -19,15 +19,19 @@
 	<p><b>Role(s): </b><security:authentication property="principal.authorities"/></p>
 	
 	<br>
-	
 	<hr>
+	
+	<security:authorize access="hasRole('MANAGER')">
 	<!-- ADD LINK FOR LEADERS.... FOR MANAGERS -->
 		<p>
 			<a href = "${pageContext.request.contextPath}/leaders">Leaders' Page</a>
-			(Only For Leaders)
 		</p>	
 	<hr>
 	<br>
+	</security:authorize>
+	
+	<security:authorize access="hasRole('ADMIN')">
+	
 	<!-- ADD LINK FOR LEADERS.... FOR MANAGERS -->
 		<p>
 			<a href = "${pageContext.request.contextPath}/systems">Systems Page</a>
@@ -35,6 +39,8 @@
 		</p>	
 	<hr>
 	<br>
+	
+	</security:authorize>
 	
 	<form:form action="${pageContext.request.contextPath}/logout" method="POST">
 	
