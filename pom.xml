@@ -33,6 +33,20 @@
 		  <artifactId>spring-security-taglibs</artifactId>
 		  <version>${springsecurity.version}</version>
 		</dependency>
+		
+		
+		<!-- MySQL & C3P0 Support -->
+		<dependency>
+		  <groupId>mysql</groupId>
+		  <artifactId>mysql-connector-java</artifactId>
+		  <version>8.0.26</version>
+		</dependency>
+		
+		<dependency>
+		  <groupId>com.mchange</groupId>
+		  <artifactId>c3p0</artifactId>
+		  <version>0.9.5.5</version>
+		</dependency>
 
 		<!-- Spring MVC support -->
 		<dependency>
